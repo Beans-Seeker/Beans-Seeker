@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        
+        <link href="{% static 'css/base.css' %}" rel="stylesheet">
+        {% block cssfile %}
+        {% endblock %}
+        <title>Beans Seeker</title>
+    </head>
+    <body>
+        <header class='head'>
+            <div class="logo">Beans Seeker</div>
+            <div class="account"><a href="{% url 'account' %}">Account</a></div>
+        </header>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

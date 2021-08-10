@@ -1,0 +1,12 @@
+.head{
+    display:flex;
+}
+
+
+.logo{
+    justify-content:flex-start;
+}
+
+.account{
+    justify-content:flex-end;
+}
