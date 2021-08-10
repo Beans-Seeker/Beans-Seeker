@@ -75,11 +75,12 @@ WSGI_APPLICATION = 'project.wsgi.application'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS =[
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'accounts', 'static'),
+    os.path.join(BASE_DIR, 'beans', 'static')
 ]
 # 현재 static 파일들이 어디에 있는지 확인
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'beans', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
