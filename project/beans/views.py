@@ -6,3 +6,6 @@ def main(request):
 
 def cafes(request):
     return render(request, 'cafes.html')
+
+def profile(request):
+    return render(request, 'profile.html')

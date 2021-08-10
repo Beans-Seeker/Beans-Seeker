@@ -4,16 +4,33 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8">
-        
         <link href="{% static 'css/base.css' %}" rel="stylesheet">
+
         {% block basefile %}
         {% endblock %}
+
         <title>Beans Seeker</title>
     </head>
     <body>
         <header class='head'>
-            <div class="logo">Beans Seeker</div>
-            <div class="account"><a href="{% url 'login' %}">Account</a></div>
+            <div class="logo">
+                <a href="{% url 'main' %}">
+                    <img src="{% static 'img/logo3.png' %}" class="logoImg">
+                </a>
+            </div>
+            
+            {% if not user.is_authenticated %}
+            <div class="account">
+                <a href="{% url 'login' %}">Sign In</a>
+            </div>
+            {% endif %}
+
+            {% if user.is_authenticated %}
+            <div class="account">
+                <a href="{% url 'profile' %}">{{user.username}} 님</a>
+                <a href="{% url 'logout' %}">Log Out</a>
+            </div>
+            {% endif %}
         </header>
         {% block content %}
         {% endblock %}

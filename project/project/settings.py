@@ -76,7 +76,9 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR, 'accounts', 'static'),
-    os.path.join(BASE_DIR, 'beans', 'static')
+    os.path.join(BASE_DIR, 'beans', 'static'),
+    os.path.join(BASE_DIR, 'project', 'static')
+
 ]
 # 현재 static 파일들이 어디에 있는지 확인
 

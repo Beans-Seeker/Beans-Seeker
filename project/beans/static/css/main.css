@@ -1,16 +1,8 @@
-@font-face {
-    font-family: 'Minhye';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Minhye.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 *{
     margin:0; 
     box-sizing:border-box;
     padding:0;
     list-style:none;
-    font-family: 'Minhye';
 }
 
 .cover{
@@ -27,18 +19,13 @@
 }
 
 .head{
-    height:50px;
+    height:60px;
 }
 
 .head ::after{
     content:'';
     display:block;
     clear: left;
-}
-
-.logo{
-    padding: 0px 10px 10px 20px;
-    background-color: #e6e3e3;
 }
 
 .blog{

@@ -5,10 +5,11 @@ from accounts.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', main, name='main'),
+    path('', main, name="main"),
     path('cafes/', cafes, name="cafes"),
     path('account/', include('accounts.urls')),
-    
+    path('profile/', profile, name="profile"),
+
 ]
 
 

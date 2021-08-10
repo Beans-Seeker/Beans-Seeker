@@ -8,9 +8,13 @@
 
 {% block content %}
     <div class="login_container">
-        <img class="instagramText" src="{% static 'img/logo_text.png' %}" alt="instagramText">
-        
-        <form action="{% url 'login' %}" method="POST">
+        <img class="logoText" src="{% static 'img/logo_text.png' %}" alt="logoText">
+       
+        {% if error %}
+            <script>alert('사용자의 정보가 일치하지 않습니다')</script>
+        {% endif %}
+
+            <form action="{% url 'login' %}" method="POST">
             {% csrf_token %}
             <input type="text" class="userLogin" name="id" placeholder="아이디">
             <input type="password" class="userLogin" name="password" placeholder="비밀번호">
@@ -20,7 +24,7 @@
     <div class="join_container">
         <footer class="joinInsta">
             <p class="join">계정이 없으신가요? 
-                <button class="joinBtn"><a href="{% url 'signup' %}">가입하기</a></button>
+                <button class="joinBtn"><a href="{% url 'register' %}">가입하기</a></button>
             </p>
         </footer>
     </div>
