@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <link href="{% static 'css/main.css' %}" rel="stylesheet">
+        <title>Beans Seeker</title>
+    </head>
+    <body>
+        <header class='head'>
+            <h1 class='logo'>Beans Seeker</h1>
+        </header>
+        <main>
+            <article class="cover">
+                <h2 >당신에 맞는 원두, 당신이 원하는 원두, 당신이 필요한 원두 </h2>
+            </article>
+            <div class="menu-content">
+                <p>그때 거기서 먹었던 커피가 진짜 맛있었는데 ...</p>
+                <button>카페별 원두 알아보러 가기</button>
+            </div>
+            <aside class='blog'>
+                <nav class='about'>
+                    <div class='about-content'><img src="{% static 'img/e.png' %}"></div>
+                    <div class='about-content'><img src="{% static 'img/d.png' %}"></div>
+                    <div class='about-content'><img src="{% static 'img/a.png' %}"></div>
+                </nav>
+            </aside>
+        </main>
+    </body>
+</html>

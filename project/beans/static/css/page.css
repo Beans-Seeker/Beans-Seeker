@@ -1,0 +1,54 @@
+.logo{
+    text-align:center;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    background-color: #e6e3e3;
+    ;
+}
+
+html{
+    color:#181818;
+    width: auto;
+}
+
+.menu-gallery{
+    width: 300px;
+    margin:0 20opx;
+}
+
+.menu-gallery-list{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 80px 0;
+}
+
+.menu-gallery-img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    margin: 10px;
+}
+
+.menu-gallery a{
+    width:100%;
+    display: block;
+}
+
+.menu-title{
+    justify-content: left;
+    margin: 20px;
+    display: flex;
+    font-size: 30px;
+}
+
+.menu-gallery-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+}
