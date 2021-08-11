@@ -2,14 +2,14 @@ from django.contrib import admin
 from django.urls import path, include
 from beans.views import *
 from accounts.views import *
+from cafes.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main, name="main"),
-    path('cafes/', cafes, name="cafes"),
     path('account/', include('accounts.urls')),
     path('profile/', profile, name="profile"),
-
+    path('cafe/', include('cafes.urls'))
 ]
 
 

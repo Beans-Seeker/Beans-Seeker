@@ -17,10 +17,9 @@ a{
 .login_container{
     background-color: white;
     border : 1px solid #dbdbdb;
-    width: 300px;
+    width:25%;
     height: 330px;
     margin: 100px auto 0 auto;
-    padding:40px;
 }
 
 .instagramText{
@@ -30,7 +29,7 @@ a{
 }
 
 .userLogin{
-    width:279px;
+    width:80%;
     padding: 13px;
     margin-top:10px;
     background-color: #FAFAFA;
@@ -51,12 +50,12 @@ a{
 }
 
 .join_container{
+    width:25%;
     margin:10px auto;
 }
 
 .joinInsta{
     background-color: white;
-    width:380px;
     border: 1px solid #dbdbdb;
     margin: 10px auto 0 auto;
     text-align:center;
@@ -75,6 +74,3 @@ a{
     font-size:15px;
     font-weight:bolder;
 }
-
-
-
