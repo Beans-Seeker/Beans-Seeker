@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block basefile %}
+<title>Starburks</title>
+<link href="{% static 'css/page.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<main>
+    <h2 class='menu-title'>Starburks</h2>
+    <div class='menu-gallery-list'>
+        <div class='menu-gallery'>
+            <a href='#'>
+                <img class='menu-gallery-img' src="{% static 'img/starbucks/star1.jpg' %}" alt/>
+                <div class='menu-gallery-content'>
+                    <h4>베란다 블렌드</h4>
+                </div>
+            </a>
+        </div>
+        <div class='menu-gallery'>
+            <a href='#'>
+                <img class='menu-gallery-img' src="{% static 'img/starbucks/star2.jpg' %}" alt/>
+                <div class='menu-gallery-content'>
+                    <h4>별다방 블렌드</h4>
+                </div>
+            </a>
+        </div>
+        <div class='menu-gallery'>
+            <a href='#'>
+                <img class='menu-gallery-img' src="{% static 'img/starbucks/star3.jpg' %}" alt/>
+                <div class='menu-gallery-content'>
+                    <h4>하우스 블렌드</h4>
+                </div>
+            </a>
+        </div>
+        <div class='menu-gallery'>
+            <a href='#'>
+                <img class='menu-gallery-img' src="{% static 'img/starbucks/star4.jpg' %}" alt/>
+                <div class='menu-gallery-content'>
+                    <h4>에스프레소 로스트</h4>
+                </div>                          
+            </a>
+        </div>
+        <div class='menu-gallery'>
+            <a href='#'>
+                <img class='menu-gallery-img' src="{% static 'img/starbucks/star5.jpg' %}" alt/>
+                <div class='menu-gallery-content'>
+                    <h4>카페 베로나</h4>
+                </div>
+            </a>
+        </div>
+        <div class='menu-gallery'>
+            <a href='#'>
+                <img class='menu-gallery-img' src="{% static 'img/starbucks/star6.jpg' %}" alt/>
+                <div class='menu-gallery-content'>
+                    <h4>디카페인 베란다 블론드</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
+{% endblock %}
+  

@@ -3,11 +3,31 @@
 {% load static %}
 
 {% block basefile %}
-    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/profile.css' %}" rel="stylesheet">
 {% endblock %} 
 
 {% block content %}
-    <main>
-        <p>프로필 화면</p>
-    </main>
+<h1>{{user.username}} 님의 취향</h1>
+
+<div class="profile_container">
+    <div class="likeBean">
+        <p>내가 좋아하는 원두</p>
+        <div class="beans">
+            <img class='beanImg' src="{% static 'img/starbucks/star1.jpg' %}"/>
+            <img class='beanImg' src="{% static 'img/tomntoms/tom1.png' %}"/>
+            <img class='beanImg' src="{% static 'img/ediya/ediya1.jpg' %}"/>
+        </div>
+    </div>
+    <div class="likeCoffee">
+        <p>내가 좋아하는 커피</p>
+        <div class="coffees">
+            <img class='coffeeImg' src="{% static 'img/ediya/디카페인 콜드브루 라떼.png' %}"/>
+            <img class='coffeeImg' src="{% static 'img/ediya/민트모카.png' %}"/>
+            <img class='coffeeImg' src="{% static 'img/hollys/디카페인 아메리카노.png' %}"/>
+            <img class='coffeeImg' src="{% static 'img/tomntoms/그린티라떼 콜드브루.jpg' %}"/>
+            <img class='coffeeImg' src="{% static 'img/tomntoms/크림달고나 카페라떼.jpg' %}"/>
+
+        </div>
+    </div>
+</div>
 {% endblock %}

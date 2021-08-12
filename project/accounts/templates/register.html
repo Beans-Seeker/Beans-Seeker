@@ -20,16 +20,16 @@
         <form action="{% url 'register' %}" method="POST" class="login">
             {% csrf_token %}
             <label>ID</label>
-            <input type="text" placeholder="아이디" name="id">
+            <input type="text" placeholder="아이디를 입력해주세요" name="id">
             <label>PASSWORD</label>
-            <input type="password" placeholder="비밀번호" name="password1">
+            <input type="password" placeholder="비밀번호를 입력해주세요" name="password1">
             <label>PASSWORD 확인</label>
             <input type="password" placeholder="비밀번호 확인" name="password2">
             <button id="signUpButton" type="submit">가입하기</button>
         </form>
-        
+
         <p class="join">계정이 있으신가요?
-            <button class="joinBtn"><a href="{% url 'login' %}">로그인</a></button>
+            <a href="{% url 'login' %}">로그인</a>
         </p>
     </div>
 </div>

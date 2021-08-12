@@ -40,6 +40,13 @@
 
 }
 
+.findCafe{
+    text-decoration: none;
+    font-weight: bold;
+    color:#72867e;
+}
+
+
 button{
     border: 1px;
     background-color: #c1c5c1;

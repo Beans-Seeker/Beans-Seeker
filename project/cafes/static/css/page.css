@@ -1,12 +1,9 @@
-.logo{
-    text-align:center;
-}
+
 
 *{
     box-sizing: border-box;
     padding:0;
     background-color: #e6e3e3;
-    ;
 }
 
 html{
@@ -17,7 +14,7 @@ html{
 
 .menu-gallery{
     width: 300px;
-    margin:0 20opx;
+    margin:0 20px;
 }
 
 .menu-gallery-list{
@@ -40,16 +37,18 @@ html{
     display: block;
 }
 
-
-.menu-title{
+h2{
+    text-align:center; 
+}
+/* .menu-title{
     justify-content: center;
     margin: 80px 0;
     display: flex;
     font-size: 70px;
     line-height: 41px;
     color:#8F6363;
-}
-
+    text-align:center;
+} */
 
 .menu-gallery h4{
     display:flex;
