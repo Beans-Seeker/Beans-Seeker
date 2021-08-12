@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block basefile %}
+    <title>Login - Bean Seeker</title>
+    <link href="{% static 'css/login.css' %}" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+    <div class="login_container">
+        <img class="logoText" src="{% static 'img/logo3.png' %}" alt="logoText" style="width:100px; height:30px;">
+       
+        {% if error %}
+            <script>alert('사용자의 정보가 일치하지 않습니다')</script>
+        {% endif %}
+
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+            <input type="text" class="userLogin" name="id" placeholder="아이디">
+            <input type="password" class="userLogin" name="password" placeholder="비밀번호">
+            <button id="loginButton" type="submit">로그인</button>
+        </form>  
+          
+    </div>
+    <div class="join_container">
+        <footer class="joinInsta">
+            <p class="join">계정이 없으신가요? 
+                <button class="joinBtn"><a href="{% url 'register' %}">가입하기</a></button>
+            </p>
+        </footer>
+    </div>
+{% endblock %}

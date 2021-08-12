@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Minhye';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Minhye.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'Minhye';
+    background-image: url("../../../beans/static/img/coffee_beans.jpg");
+}
+
+a{
+    text-decoration: none;
+}
+
+.login_container{
+    background-color: white;
+    border : 1px solid #dbdbdb;
+    width:25%;
+    height: 330px;
+    margin: 100px auto 0 auto;
+}
+
+.instagramText{
+    background-color: white;  
+    display:block;
+    margin: 40px auto;
+}
+
+.userLogin{
+    width:80%;
+    padding: 13px;
+    margin-top:10px;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+    border:1px solid #dbdbdb;
+}
+
+#loginButton{ 
+    background-color: #0095f6;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    width:300px;
+    height:32px;
+    margin-top:20px;
+    color:white;
+    font-weight:bold;
+    opacity: 0.3;
+}
+
+.join_container{
+    width:25%;
+    margin:10px auto;
+}
+
+.joinInsta{
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    margin: 10px auto 0 auto;
+    text-align:center;
+}
+
+.join{
+    background-color: white;
+    padding:10px auto;
+    font-size:15px;
+}
+
+.joinBtn{
+    background-color: white;
+    border:none;
+    color:#06ABFE;
+    font-size:15px;
+    font-weight:bolder;
+}

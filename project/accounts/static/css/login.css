@@ -1,76 +1,63 @@
-@font-face {
-    font-family: 'Minhye';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Minhye.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+body{
+    font-size:13px;
+    /* font-family: ; */
+    line-height: 1.6em;
+    background-color:rgb(145, 112, 97);
 }
 
-*{
-    font-family: 'Minhye';
-    background-image: url("../../../beans/static/img/coffee_beans.jpg");
+.container{
+    width:500px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #e6e3e3;
+    border:1px solid #926e45;
+    border-radius:5px;
+    padding:30px;
+    box-shadow:0 0 30px;
 }
 
-a{
-    text-decoration: none;
-}
-
-.login_container{
-    background-color: white;
-    border : 1px solid #dbdbdb;
-    width:25%;
-    height: 330px;
-    margin: 100px auto 0 auto;
-}
-
-.instagramText{
-    background-color: white;  
+.container img{
+    width:70%;
     display:block;
-    margin: 40px auto;
+    margin:0px auto;
 }
 
-.userLogin{
-    width:80%;
-    padding: 13px;
-    margin-top:10px;
-    background-color: #FAFAFA;
-    border-radius: 3px;
-    border:1px solid #dbdbdb;
+form.login{
+    background-color: #eee;
+    padding: 20px;
+    border-radius:5px;
+    box-shadow: 1px 1px lightgray;
 }
 
-#loginButton{ 
-    background-color: #0095f6;
-    border: 1px solid #dbdbdb;
-    border-radius: 5px;
-    width:300px;
-    height:32px;
+form.login label {
+    font-weight: bold;
+    font-size:0.8em;
+}
+
+form.login input[type=email],
+form.login input[type=password]{
+    display:block;
+    width:95%;
+    border-radius:5px;
+    padding:7px 10px;
+    margin-bottom:10px;
+}
+
+form.login input[type=checkbox]{
+    vertical-align: middle;
+}
+
+form.login p button, button{
+    display:block;
+    margin:0px auto;
+    width:120px;
+    padding:5px 10px;
+    background-color: #b69786;
+    text-align: center;
     margin-top:20px;
-    color:white;
-    font-weight:bold;
-    opacity: 0.3;
-}
-
-.join_container{
-    width:25%;
-    margin:10px auto;
-}
-
-.joinInsta{
-    background-color: white;
-    border: 1px solid #dbdbdb;
-    margin: 10px auto 0 auto;
-    text-align:center;
-}
-
-.join{
-    background-color: white;
-    padding:10px auto;
-    font-size:15px;
-}
-
-.joinBtn{
-    background-color: white;
-    border:none;
-    color:#06ABFE;
-    font-size:15px;
-    font-weight:bolder;
+    text-decoration: none;
+    color:ghostwhite;
+    text-decoration: none;
 }
