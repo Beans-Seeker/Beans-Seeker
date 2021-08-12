@@ -3,9 +3,61 @@
 
 {% block basefile %}
     <title>Login - Bean Seeker</title>
-    <link href="{% static 'css/tomntoms.css' %}" rel="stylesheet" type="text/css" />
+    <link href="{% static 'css/page.css' %}" rel="stylesheet" type="text/css" />
 {% endblock %}
 
 {% block content %}
-    <p>탐앤탐스</p>
+<main>
+    <h2 class='menu-title'>tomntoms</h2>
+    <div class='menu-gallery-list'>
+        <div class='menu-gallery'>
+            <a href='#'>
+                <img class='menu-gallery-img' src="{% static 'img/tomntoms/tom1.png' %}" alt/>
+                <div class='menu-gallery-content'>
+                    <h4>인도네시아 원두</h4>
+                </div>
+            </a>
+        </div>
+        <div class='menu-gallery'>
+            <a href='#'>
+                <img class='menu-gallery-img' src="{% static 'img/tomntoms/tom2.png' %}" alt/>
+                <div class='menu-gallery-content'>
+                    <h4>케냐 원두</h4>
+                </div>
+            </a>
+        </div>
+        <div class='menu-gallery'>
+            <a href='#'>
+                <img class='menu-gallery-img' src="{% static 'img/tomntoms/tom3.png' %}" alt/>
+                <div class='menu-gallery-content'>
+                    <h4>콜롬비아 원두</h4>
+                </div>
+            </a>
+        </div>
+        <div class='menu-gallery'>
+            <a href='#'>
+                <img class='menu-gallery-img' src="{% static 'img/tomntoms/tom4.png' %}" alt/>
+                <div class='menu-gallery-content'>
+                    <h4>에디오피아 원두</h4>
+                </div>                          
+            </a>
+        </div>
+        <div class='menu-gallery'>
+            <a href='#'>
+                <img class='menu-gallery-img' src="{% static 'img/tomntoms/tom5.png' %}" alt/>
+                <div class='menu-gallery-content'>
+                    <h4>인도네시아 원두</h4>
+                </div>
+            </a>
+        </div>
+        <div class='menu-gallery'>
+            <a href='#'>
+                <img class='menu-gallery-img' src="{% static 'img/tomntoms/tom6.png' %}" alt/>
+                <div class='menu-gallery-content'>
+                    <h4>에가체프 원두</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
 {% endblock %}

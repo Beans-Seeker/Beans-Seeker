@@ -8,15 +8,15 @@
 {% endblock %} 
 
 {% block content %}
-    <p>카페 화면</p>
-        
-    <a href="{% url 'tomntoms' %}">탐앤탐스</a>
-    <a href="{% url 'starbucks' %}">스타벅스</a>
-    <p>할리스커피</p>
-    <p>엔젤리너스 커피</p>
-    <p>카페 파스쿠찌</p>
-    <p>빽다방</p>
-    <p>커피빈</p>
-    <p>이디야</p>
-    <p>투썸플레이스</p>
+    <body>
+        <article class='cafe'>
+            <pre>
+                <a> 할리스커피       투썸플레이스         엔젤리너스 커피</a>
+                <a href="{% url 'starbucks' %}">                                   스타벅스</a>
+                <a href="{% url 'tomntoms' %}">               탐엔탐스 </a>
+                <a> 커피빈                 이디야            카페 파스쿠찌</a>
+                <a>          카페비엔나             빽다방</a>
+            </pre>
+        </article>
+    </body>
 {% endblock %}

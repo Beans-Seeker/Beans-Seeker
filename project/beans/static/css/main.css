@@ -9,23 +9,13 @@
     height:100%;
     padding: bottom 100%;
     color:#b1744b;
-    background-image: url('../img/mainPic.jpg');
+    background-image: url('../img/main.jpg');
     background-size: cover;
     background-repeat:no-repeat;
-    line-height: 900px;
+    line-height: 800px;
     font-size:40px;
     text-align:center;
     background-position: center;
-}
-
-.head{
-    height:60px;
-}
-
-.head ::after{
-    content:'';
-    display:block;
-    clear: left;
 }
 
 .blog{
@@ -60,7 +50,7 @@ button{
 }
 
 .about-content img{
-    width:28%;
+    width:25%;
     float:left;
     padding: 10px;
 }

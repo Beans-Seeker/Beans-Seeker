@@ -3,3 +3,19 @@
 *{
     text-decoration: none;
 }
+
+html{
+    background-image: url("../img/cafeback.jpeg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    height:100%;
+    padding: bottom 100%;
+}
+
+.cafe{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
