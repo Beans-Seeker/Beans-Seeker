@@ -19,12 +19,18 @@
     <div class="login-form">
         <form action="{% url 'register' %}" method="POST" class="login">
             {% csrf_token %}
-            <label>ID</label>
-            <input type="text" placeholder="아이디를 입력해주세요" name="id">
-            <label>PASSWORD</label>
-            <input type="password" placeholder="비밀번호를 입력해주세요" name="password1">
-            <label>PASSWORD 확인</label>
-            <input type="password" placeholder="비밀번호 확인" name="password2">
+            <p>
+                <label>ID</label>
+                <input type="text" placeholder="아이디를 입력해주세요" name="id">
+            </p>
+            <p>
+                <label>PASSWORD</label>
+                <input type="password" placeholder="비밀번호를 입력해주세요" name="password1">
+            </p>
+            <p>
+                <label>PASSWORD 확인</label>
+                <input type="password" placeholder="비밀번호를 다시 입력해주세요" name="password2"> 
+            </p>
             <button id="signUpButton" type="submit">가입하기</button>
         </form>
 

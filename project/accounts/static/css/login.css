@@ -50,12 +50,13 @@ input::placeholder {
 form.login label {
     font-weight: bold;
     font-size:1em;
+    margin-bottom: 5px;
 }
 
 form.login input[type=text],
 form.login input[type=password]{
     display:block;
-    width:50%;
+    width:60%;
     border-radius:5px;
     padding:7px 10px;
     margin: 0 auto;

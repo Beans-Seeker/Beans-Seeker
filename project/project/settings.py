@@ -21,13 +21,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ginc58o!jagn$fl=_4vfgme&0@qvd0ov(r@*nbl0@m0)4mc-xk'
+# SECRET_KEY = 'django-insecure-ginc58o!jagn$fl=_4vfgme&0@qvd0ov(r@*nbl0@m0)4mc-xk'
+SECRET_KEY = os.environ.get(
+    'SECRET_KEY', 'django-insecure-ginc58o!jagn$fl=_4vfgme&0@qvd0ov(r@*nbl0@m0)4mc-xk')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (os.environ.get('DEBUG','True')!='False')
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -138,3 +140,12 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# AWS 배포 
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+# ECRET_KEY = os.environ.get(
+#     'SECRET_KEY', 'django-insecure-ginc58o!jagn$fl=_4vfgme&0@qvd0ov(r@*nbl0@m0)4mc-xk')
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
