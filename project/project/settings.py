@@ -144,8 +144,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # AWS 배포 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-# ECRET_KEY = os.environ.get(
-#     'SECRET_KEY', 'django-insecure-ginc58o!jagn$fl=_4vfgme&0@qvd0ov(r@*nbl0@m0)4mc-xk')
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
